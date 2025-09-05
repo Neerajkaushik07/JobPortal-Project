@@ -1,0 +1,5 @@
+.content {
+  margin-top: 100px;
+  padding-bottom: 50px; /* Add padding at the bottom for better scrolling experience */
+  min-height: calc(100vh - 100px); /* Ensure content takes at least the full viewport height minus the top margin */
+}

@@ -1,0 +1,74 @@
+.formContainer {
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--card-border-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+[data-theme="dark"] .formContainer {
+  box-shadow: 0 0.125rem 0.25rem rgba(255, 255, 255, 0.075);
+}
+
+.formInput,
+.formInput:focus {
+  background-color: var(--input-bg-color, var(--bs-body-bg)); /* Fallback to bootstrap default */
+  color: var(--text-color);
+  border-color: var(--card-border-color);
+}
+
+.formInput::placeholder {
+  color: var(--text-color-muted, #6c757d);
+}
+
+.formInput:focus {
+  box-shadow: 0 0 0 0.25rem var(--primary-color-transparent, rgba(13, 110, 253, 0.25));
+}
+
+.submitBtn {
+  /* Using Bootstrap button variants now (variant="primary" size="lg"), 
+     so most custom styles for the button itself might be redundant or can be simplified.
+     Keeping some for potential overrides if needed, but they are largely handled by Bootstrap. */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Changed from align-content */
+  /* width: 150px; */ /* Let Bootstrap handle width or use its classes */
+  /* height: 45px; */ /* Let Bootstrap handle height or use its classes */
+  /* background-color: #229ac8; */ /* Handled by Bootstrap variant */
+  /* background-image: linear-gradient(to bottom, #23a1d1, #1f90bb); */ /* Handled by Bootstrap variant */
+  /* border-color: #1f90bb #1f90bb #145e7a; */ /* Handled by Bootstrap variant */
+  /* color: rgba(255, 255, 255, 0.75); */ /* Handled by Bootstrap variant */
+  /* font-size: 20px; */ /* Handled by Bootstrap size */
+}
+
+.submitBtn:active {
+  transform: translateY(2px); /* Adjusted for a more subtle effect with Bootstrap buttons */
+  /* box-shadow: 0px 1px 1px rgb(0, 0, 0, 0.5); */ /* Bootstrap might handle this or can be themed */
+}
+
+.submitBtn:hover {
+  filter: brightness(110%); /* Slight brightness increase on hover */
+  /* color: white; */ /* Handled by Bootstrap variant */
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.requiredField {
+  color: var(--text-color);
+  font-weight: 500; /* Slightly bolder label for required fields */
+}
+
+.requiredField::after {
+  content: " *";
+  color: var(--bs-danger, red); /* Use Bootstrap danger color variable or fallback */
+  margin-left: 0.1rem;
+}
+
+/* Ensure all labels are themed for consistency */
+label {
+  color: var(--text-color);
+  margin-bottom: 0.25rem; /* Add a little space below labels */
+  display: block; /* Ensure labels take full width if needed */
+}

@@ -1,0 +1,109 @@
+/* .rowStyle {
+  margin-top: 75px;
+  margin-bottom: 15px;
+}
+.span {
+  background-color: var(--card-background-color);
+  padding: 8px;
+  font-size: 1.3rem;
+  border: 1px solid var(--card-border-color);
+  border-radius: 4px;
+}
+.button {
+  background-color: #4E4FEB;
+  box-shadow: 3px 3px 5px 0px var(--card-border-color);
+}
+.button:hover {
+  filter: brightness(110%);
+}
+
+.button:active {
+  transform: translateY(2px);
+  box-shadow: 1px 1px 5px 0px var(--card-border-color);
+}
+.tableHeader th {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 18px;
+  background-color: #4E4FEB;
+ 
+  color: white;
+}
+.actionButton {
+  margin: 0px 2px;
+  background-color: inherit;
+  color: #068FFF;
+  font-size: 1rem;
+  padding: 4px;
+  border: none;
+ 
+}
+.actionButton:hover {
+  font-weight: 600;
+  color: #068FFF;
+  border-bottom: 1px solid #000000;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 1000px) {
+  .tableContainer {
+    width: 500px;
+   
+  }
+}
+.tableBox {
+  margin-top: 30px;
+  box-shadow: 3px 3px 5px 1px var(--card-border-color);
+}
+.tableBody tr {
+  
+  background-color: var(--card-background-color);
+}
+
+.row {
+  text-align: center;
+} */
+.rowStyle {
+  margin-top: 75px;
+  margin-bottom: 15px;
+}
+.span {
+  background-color: var(--card-background-color);
+  padding: 8px;
+  font-size: 1.3rem;
+  border: 1px solid var(--card-border-color);
+  border-radius: 4px;
+}
+.button {
+  background-color: #4E4FEB;
+  border-color: #4E4FEB;
+  box-shadow: 3px 3px 5px 0px var(--card-border-color);
+}
+
+.button:hover {
+  background-color: #068FFF;
+  border-color: #068FFF;
+}
+
+.button:active,
+.button:focus {
+  background-color: #068FFF;
+  outline: 1px solid #068FFF;
+
+  transform: translateY(2px);
+  box-shadow: 1px 1px 5px 0px var(--card-border-color);
+}
+
+.tableHeader th {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 18px;
+  background-color: #4E4FEB;
+  /* color: var(--text-color); */
+  color: white;
+}
+
+.tableBox {
+  /* border: 2px solid white; */
+  box-shadow: 3px 3px 5px 1px var(--card-border-color);
+  overflow-x: auto;
+}

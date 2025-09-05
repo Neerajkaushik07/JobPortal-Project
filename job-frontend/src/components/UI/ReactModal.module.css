@@ -1,0 +1,52 @@
+.reactModal {
+  height: 400px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #4E4FEB #f1f1f1;
+}
+
+.reactModal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.reactModal::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+.reactModal::-webkit-scrollbar-thumb {
+  background: #4E4FEB;
+  border-radius: 8px;
+}
+
+.reactModal::-webkit-scrollbar-thumb:hover {
+  background: #3a3bc2;
+}
+
+.submitBtn {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid rgb(71, 71, 121);
+  background-color: #4E4FEB;
+  width: 80%;
+  margin: 10px 0;
+  color: white;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  border: 1px solid rgb(100, 97, 97);
+  box-shadow: 3px 5px 10px rgb(0, 0, 0, 0.5);
+}
+.submitBtn:active {
+  transform: translateY(5px);
+  box-shadow: 0px 1px 1px rgb(0, 0, 0, 0.5);
+}
+.submitBtn:hover {
+  filter: brightness(115%);
+  /* background-color: #1e6fda; */
+
+  color: white;
+}
+
+/* .reactModal > .modal-body {
+  overflow-y: scroll;
+} */
